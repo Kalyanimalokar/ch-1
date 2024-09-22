@@ -6,7 +6,6 @@ const tar = require('tar-fs');
 const inputFile = path.join('tmp', 'dump.tar.gz');
 const outputDir = path.join('tmp', 'extracted');
 
-// Ensure the output directory exists
 fs.mkdirSync(outputDir, { recursive: true });
 
 fs.createReadStream(inputFile)
