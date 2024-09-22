@@ -5,7 +5,6 @@ const path = require('path');
 const url = 'https://fiber-challenges.s3.amazonaws.com/dump.tar.gz';
 const outputPath = path.join('tmp', 'dump.tar.gz');
 
-// Ensure the tmp directory exists
 fs.mkdirSync('tmp', { recursive: true });
 
 const fileStream = fs.createWriteStream(outputPath);
